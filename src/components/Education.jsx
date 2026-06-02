@@ -1,48 +1,29 @@
 import styles from './Education.module.css'
 
 const edu = [
-  {
-    degree: "Bachelor's Degree",
-    institution: 'The British College',
-    location: 'Kathmandu, Nepal',
-    period: '2017 – 2022',
-  },
-  {
-    degree: 'Intermediate',
-    institution: 'Aishwarya Vidya Niketan',
-    location: 'Dhangadhi, Nepal',
-    period: '2015 – 2017',
-  },
+  { degree: "Bachelor's Degree", school: 'The British College', location: 'Kathmandu, Nepal', period: '2017–2022' },
+  { degree: 'Intermediate', school: 'Aishwarya Vidya Niketan', location: 'Dhangadhi, Nepal', period: '2015–2017' },
 ]
 
 const interests = [
-  {
-    icon: '🔍',
-    title: 'QA & Automation',
-    desc: 'Exploring new tools, AI in QA, and process improvement.',
-  },
-  {
-    icon: '🚀',
-    title: 'Entrepreneurship',
-    desc: 'Passionate about startups and innovative business ventures.',
-  },
+  { emoji: '🔍', title: 'QA & Automation', desc: 'Exploring new tools, AI in QA, and process improvement.' },
+  { emoji: '🚀', title: 'Entrepreneurship', desc: 'Passionate about startups and innovative business ventures.' },
 ]
 
 export default function Education() {
   return (
-    <section id="education">
+    <section id="education" className={styles.section}>
       <div className="container">
-        <div className="section-tag">Education</div>
-        <h2 className="section-title">Education & Interests</h2>
-        <div className={styles.grid}>
+        <div className={styles.cols}>
           <div>
-            <p className={styles.sub}>Education</p>
-            <div className={styles.eduList}>
+            <p className="label" style={{marginBottom:'1.25rem'}}>Education</p>
+            <div className={styles.list}>
               {edu.map(e => (
-                <div key={e.institution} className={styles.eduCard}>
+                <div key={e.school} className={styles.item}>
                   <div>
                     <p className={styles.degree}>{e.degree}</p>
-                    <p className={styles.institution}>{e.institution} · {e.location}</p>
+                    <p className={styles.school}>{e.school}</p>
+                    <p className={styles.loc}>{e.location}</p>
                   </div>
                   <span className={styles.period}>{e.period}</span>
                 </div>
@@ -50,14 +31,14 @@ export default function Education() {
             </div>
           </div>
           <div>
-            <p className={styles.sub}>Interests</p>
-            <div className={styles.interestList}>
+            <p className="label" style={{marginBottom:'1.25rem'}}>Interests</p>
+            <div className={styles.list}>
               {interests.map(i => (
-                <div key={i.title} className={styles.interestCard}>
-                  <span className={styles.icon}>{i.icon}</span>
+                <div key={i.title} className={styles.item}>
+                  <span className={styles.emoji}>{i.emoji}</span>
                   <div>
-                    <p className={styles.intTitle}>{i.title}</p>
-                    <p className={styles.intDesc}>{i.desc}</p>
+                    <p className={styles.degree}>{i.title}</p>
+                    <p className={styles.loc}>{i.desc}</p>
                   </div>
                 </div>
               ))}

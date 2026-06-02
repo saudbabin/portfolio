@@ -1,33 +1,26 @@
 import styles from './About.module.css'
 
-const stats = [
-  { value: '3+', label: 'Years Experience' },
-  { value: '50%', label: 'Defect Reduction' },
-  { value: '95%', label: 'Test Coverage' },
-  { value: '40%', label: 'Release Efficiency' },
-]
-
 export default function About() {
   return (
-    <section id="about">
-      <div className="container">
-        <div className="section-tag">About</div>
-        <h2 className="section-title">Profile</h2>
-        <div className={styles.grid}>
-          <div className={styles.text}>
-            <p>
-              Quality Assurance Engineer with 3+ years of experience in <strong>web, mobile (Android), and TV platform testing</strong> within Agile environments. Skilled in manual, API, performance, security, automation, and accessibility testing, with a proven record of mentoring junior QA members, optimizing QA processes, and managing major feature releases.
-            </p>
-            <p style={{ marginTop: '1rem' }}>
-              Experienced in unit, regression, end-to-end, black-box, security, and accessibility testing using <strong>Postman, Swagger, BurpSuite, WAVE, and NVDA tools</strong>. Adept at gathering feedback from CSD and support teams, coordinating retrospectives and root cause analysis meetings, and ensuring timely and reliable production delivery.
-            </p>
-          </div>
-          <div className={styles.stats}>
-            {stats.map(s => (
-              <div key={s.label} className={styles.stat}>
-                <span className={styles.statValue}>{s.value}</span>
-                <span className={styles.statLabel}>{s.label}</span>
-              </div>
+    <section id="about" className={styles.section}>
+      <div className={`container ${styles.inner}`}>
+        <div className={styles.left}>
+          <p className="label">About me</p>
+        </div>
+        <div className={styles.right}>
+          <h2 className={`${styles.heading} serif`}>
+            I make sure software<br />
+            <span className={styles.muted}>works flawlessly.</span>
+          </h2>
+          <p className={styles.body}>
+            Quality Assurance Engineer with 3+ years of experience in <strong>web, mobile (Android), and TV platform testing</strong> within Agile environments. Skilled in manual, API, performance, security, automation, and accessibility testing.
+          </p>
+          <p className={styles.body} style={{marginTop: '1rem'}}>
+            I have a proven record of <strong>mentoring junior QA members</strong>, optimizing QA processes, and managing major feature releases — reducing production defects by 50% and improving release cycle efficiency by 40%.
+          </p>
+          <div className={styles.tools}>
+            {['Postman', 'BurpSuite', 'Playwright', 'Selenium', 'JMeter', 'WAVE', 'NVDA', 'Azure Test Plans'].map(t => (
+              <span key={t} className="pill">{t}</span>
             ))}
           </div>
         </div>

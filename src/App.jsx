@@ -1,5 +1,6 @@
 import Nav from './components/Nav'
 import Hero from './components/Hero'
+import Stats from './components/Stats'
 import About from './components/About'
 import Experience from './components/Experience'
 import Skills from './components/Skills'
@@ -14,17 +15,18 @@ export default function App() {
       <Nav />
       <main>
         <Hero />
-        <div className="divider" />
+        <Stats />
+        <div className="section-divider" />
         <About />
-        <div className="divider" />
+        <div className="section-divider" />
         <Experience />
-        <div className="divider" />
+        <div className="section-divider" />
         <Skills />
-        <div className="divider" />
+        <div className="section-divider" />
         <Projects />
-        <div className="divider" />
+        <div className="section-divider" />
         <Education />
-        <div className="divider" />
+        <div className="section-divider" />
         <Contact />
       </main>
     </>

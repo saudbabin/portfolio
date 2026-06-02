@@ -1,41 +1,39 @@
 import styles from './Skills.module.css'
 
-const groups = [
+const categories = [
+  {
+    label: 'Testing',
+    items: ['Manual Testing', 'API Testing', 'Security Testing', 'Performance Testing', 'Accessibility Testing', 'Regression', 'End-to-End', 'Unit Testing', 'Black-Box', 'Exploratory'],
+  },
   {
     label: 'Tools',
-    items: ['Postman', 'Swagger', 'BurpSuite', 'JMeter', 'Playwright', 'Selenium', 'WAVE', 'NVDA', 'GitLab', 'Azure Test Plans'],
+    items: ['Postman', 'Swagger', 'BurpSuite', 'JMeter', 'WAVE', 'NVDA', 'GitLab', 'Azure Test Plans'],
   },
   {
-    label: 'Testing Types',
-    items: ['Manual', 'Exploratory', 'API', 'Performance', 'Security', 'Unit', 'Regression', 'End-to-End', 'Black-Box', 'Accessibility'],
+    label: 'Automation',
+    items: ['Playwright', 'Selenium', 'Java'],
   },
   {
-    label: 'Automation & Scripting',
-    items: ['Java', 'Selenium', 'Playwright'],
-  },
-  {
-    label: 'Methodologies',
-    items: ['Agile', 'Scrum', 'Sprint Planning'],
-  },
-  {
-    label: 'Soft Skills',
-    items: ['Communication', 'Collaboration', 'Mentorship', 'Problem Solving'],
+    label: 'Process',
+    items: ['Agile', 'Scrum', 'Sprint Planning', 'Root Cause Analysis', 'Retrospectives'],
   },
 ]
 
 export default function Skills() {
   return (
-    <section id="skills">
+    <section id="skills" className={styles.section}>
       <div className="container">
-        <div className="section-tag">Skills</div>
-        <h2 className="section-title">Technical Skills</h2>
-        <div className={styles.groups}>
-          {groups.map(g => (
-            <div key={g.label} className={styles.group}>
-              <p className={styles.groupLabel}>{g.label}</p>
-              <div className={styles.tags}>
-                {g.items.map(item => (
-                  <span key={item} className="tag">{item}</span>
+        <div className={styles.header}>
+          <p className="label">What I work with</p>
+          <h2 className={`${styles.title} serif`}>Skills</h2>
+        </div>
+        <div className={styles.grid}>
+          {categories.map(cat => (
+            <div key={cat.label} className={styles.cat}>
+              <p className={styles.catLabel}>{cat.label}</p>
+              <div className={styles.pills}>
+                {cat.items.map(item => (
+                  <span key={item} className="pill">{item}</span>
                 ))}
               </div>
             </div>
