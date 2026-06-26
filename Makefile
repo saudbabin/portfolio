@@ -18,5 +18,5 @@ deploy:
 	@rm "$(STATIC_BAK)"
 	@echo ">>> Committing dist repo..."
 	@cd "$(DIST_DIR)" && git add -A && git commit -m "$(MSG)"
-	@cd "$(DIST_DIR)" && git push origin master
+	@cd "$(DIST_DIR)" && git push origin main
 	@echo ">>> Done."
