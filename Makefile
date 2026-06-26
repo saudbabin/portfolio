@@ -13,6 +13,7 @@ deploy:
 	@echo ">>> Building..."
 	@cp "$(DIST_DIR)/$(STATIC_YML)" "$(STATIC_BAK)"
 	@npm run build
+	@mkdir -p "$(DIST_DIR)/.github/workflows"
 	@cp "$(STATIC_BAK)" "$(DIST_DIR)/$(STATIC_YML)"
 	@rm "$(STATIC_BAK)"
 	@echo ">>> Committing dist repo..."
