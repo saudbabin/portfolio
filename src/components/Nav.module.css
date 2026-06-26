@@ -42,6 +42,18 @@
 
 .links a:hover { color: var(--text); }
 
+.resume {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.45rem 1.1rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  color: var(--text2);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.resume:hover { border-color: rgba(255,255,255,0.25); color: var(--text); }
+
 .cta {
   font-size: 0.8rem;
   font-weight: 600;

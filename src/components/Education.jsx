@@ -6,8 +6,9 @@ const edu = [
 ]
 
 const interests = [
-  { emoji: '🔍', title: 'QA & Automation', desc: 'Exploring new tools, AI in QA, and process improvement.' },
-  { emoji: '🚀', title: 'Entrepreneurship', desc: 'Passionate about startups and innovative business ventures.' },
+  { emoji: '🔍', title: 'QA & Automation', desc: 'Exploring new QA tools, AI in testing, and continuous process improvement.' },
+  { emoji: '📋', title: 'Product Management', desc: 'Passionate about bridging QA and product thinking to deliver reliable, user-centric products.' },
+  { emoji: '🚀', title: 'Entrepreneurship', desc: 'Interested in startups and innovative business ventures.' },
 ]
 
 export default function Education() {

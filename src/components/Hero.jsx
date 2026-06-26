@@ -19,11 +19,12 @@ export default function Hero() {
           </h1>
 
           <p className={styles.sub}>
-            3+ years finding what breaks before users do. Specialized in web, mobile (Android), and TV platform testing within Agile teams.
+            4 years finding what breaks before users do. QA Engineer transitioning into a PM/QA hybrid role — specialized in web, mobile (Android), and TV platform testing within Agile teams.
           </p>
 
           <div className={styles.actions}>
             <a href="#projects" className={styles.btnPrimary}>View my work</a>
+            <a href="/CV_Babin_Saud_QA.pdf" download className={styles.btnGhost}>Download CV ↓</a>
             <a href="#contact" className={styles.btnGhost}>Get in touch ↗</a>
           </div>
 

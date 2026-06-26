@@ -1,7 +1,7 @@
 import styles from './Stats.module.css'
 
 const stats = [
-  { value: '3+', label: 'Years Experience' },
+  { value: '4+', label: 'Years Experience' },
   { value: '10+', label: 'Modules Tested' },
   { value: '50%', label: 'Defects Reduced' },
   { value: '95%', label: 'Test Coverage' },

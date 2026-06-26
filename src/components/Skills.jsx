@@ -14,8 +14,12 @@ const categories = [
     items: ['Playwright', 'Selenium', 'Java'],
   },
   {
+    label: 'Product & Project',
+    items: ['Sprint Planning', 'Requirements Gathering', 'Risk Management', 'Stakeholder Collaboration', 'Release Coordination'],
+  },
+  {
     label: 'Process',
-    items: ['Agile', 'Scrum', 'Sprint Planning', 'Root Cause Analysis', 'Retrospectives'],
+    items: ['Agile', 'Scrum', 'Root Cause Analysis', 'Retrospectives'],
   },
 ]
 

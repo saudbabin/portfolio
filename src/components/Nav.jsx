@@ -17,6 +17,7 @@ export default function Nav() {
             <li key={l.href}><a href={l.href}>{l.label}</a></li>
           ))}
         </ul>
+        <a href="/CV_Babin_Saud_QA.pdf" download className={styles.resume}>Resume ↓</a>
         <a href="mailto:saudbabin@gmail.com" className={styles.cta}>Hire me</a>
       </div>
     </nav>
